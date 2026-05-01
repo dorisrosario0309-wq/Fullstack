@@ -134,32 +134,7 @@ input{
     margin: 0 auto;
 }
 
-/* --- SECCIÓN RESPONSIVE (MÓVIL) --- */
 
-@media (max-width: 768px) {
-    .card {
-        flex-direction: column; 
-        height: auto;
-    }
-
-    .right-side {
-        height: 300px; 
-        width: 100%;
-        order: 1; 
-    }
-
-    .left-side {
-        width: 100%;
-        order: 2; 
-        padding: 40px 20px;
-    }
-
-    .logo-container {
-        width: 80%;
-        padding: 20px;
-        border-radius: 20px;
-    }
-}
 
 
 
