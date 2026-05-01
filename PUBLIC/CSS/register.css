@@ -8,7 +8,7 @@ body {
     background-color: #f8f9fa; 
 }
 
-/* --- Lado de la Imagen (right-side-bg) --- */
+/* --- Lado de la Imagen --- */
 .right-side-bg {
     background-image: url('/public/img/ta.jpeg');
     background-size: cover;
@@ -46,7 +46,53 @@ body {
     border-color: #ffca8c !important; 
 }
 
-/* Ajuste específico para que el select se vea bien y no se salga */
+/* --- CORRECCIÓN CSS: ELIMINAR OJO DUPLICADO DEL NAVEGADOR --- */
+/* Esto quita el icono nativo de 'mostrar contraseña' en Edge y Chrome */
+.input-password-clean::-ms-reveal,
+.input-password-clean::-ms-clear {
+    display: none !important;
+}
+
+.input-password-clean::-webkit-contacts-auto-fill-button,
+.input-password-clean::-webkit-credentials-auto-fill-button {
+    display: none !important;
+}
+
+/* Ajuste para que el texto de la contraseña no pise NUESTRO ojo naranja */
+#password {
+    padding-right: 60px !important;
+}
+
+/* Estilo formal y ÚNICO para el botón del ojito de Google (Naranja) */
+.btn-toggle-eye {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+    color: #ff8500; /* Naranja Bellon */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.btn-toggle-eye:hover {
+    color: #e67700; /* Naranja más oscuro al hover */
+}
+
+.btn-toggle-eye:focus {
+    outline: none;
+}
+
+.material-icons {
+    font-size: 22px; /* Tamaño formal */
+}
+
+/* --- Resto de estilos igual --- */
 select.custom-input {
     background-position: right 1.25rem center;
     padding-right: 3rem !important;
@@ -67,17 +113,15 @@ select.custom-input {
     transform: translateY(-1px);
 }
 
-/* --- NUEVO: Estilo del enlace con hover naranja --- */
 .text-info {
-    color: #48cae4 !important; /* Color celeste inicial */
+    color: #48cae4 !important; 
     transition: color 0.3s ease;
 }
 
 .text-info:hover {
-    color: #ff8500 !important; /* Naranja Bellon al pasar el mouse */
+    color: #ff8500 !important; 
 }
 
-/* --- Media Query para Ajustes Finos (PC -> Móvil) --- */
 @media (max-width: 767.98px) {
     .form-title-custom {
         font-size: 1.5rem;
