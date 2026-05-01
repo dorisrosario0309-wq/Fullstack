@@ -46,6 +46,12 @@ body {
     border-color: #ffca8c !important; 
 }
 
+/* Ajuste específico para que el select se vea bien y no se salga */
+select.custom-input {
+    background-position: right 1.25rem center;
+    padding-right: 3rem !important;
+}
+
 .custom-input:focus {
     border-color: #ff8500 !important; 
     box-shadow: 0 0 0 0.25rem rgba(255, 133, 0, 0.25) !important;
