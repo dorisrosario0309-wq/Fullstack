@@ -1,137 +1,94 @@
+/* --- Estilos Globales --- */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: white;
-    min-height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
 }
 
-
-.card {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    overflow-y: auto; 
-}
-
-.left-side {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px; 
-}
-
-.left-side h2 {
-    font-weight: 800;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-    color: #333;
-    text-align: center;
-}
-
-.input-box1 {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-input{
-    width: 100%;
-    padding: 15px 100px;
-    border: 1px solid #ffca8c; /* Borde fino naranja */
-    border-radius: 50px;
-    font-size: 0.9rem;
-    outline: none;
-}
-
-
-.input-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-    object-fit: contain;
-    opacity: 0.5; 
-}
-
-.input-box input {
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-.login-btn {
-    width: 100%;
-    max-width: 400px; 
-    padding: 14px;
-    margin-top: 15px;
-    border: none;
-    border-radius: 15px;
-    background-color: #ff8500;
-    color: white;
-    font-weight: bold;
-    font-size: 0.9rem;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(255, 133, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-.login-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(211, 115, 0, 0.4);
-}
-
-.footer-link {
-    margin-top: 30px;
-    color: #48cae4;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-}
-
-.right-side {
-    flex: 1;
+/* --- Lado de la Imagen --- */
+.right-side-bg {
     background-image: url('/public/img/ta.jpeg');
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
-.logo-container {
-    background-color: #fff;
-    width: 60%; 
-    padding: 45px 25px;
-    border-radius: 40px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+.container-logo-responsive {
+    width: 85%;
+    max-width: 450px;
 }
 
-.logo-container img {
-    max-width: 85%;
-    height: auto;
-    margin-bottom: 5px;
+.container-img-white {
+    width: 100%;
 }
 
-.slogan {
-    font-size: 0.75rem;
-    font-style: italic;
-    color: #444;
-    text-align: right;
-    width: 90%;
-    margin: 0 auto;
+.slogan-text {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    font-size: 0.9rem;
+}
+
+/* --- Lado del Formulario --- */
+.form-wrapper {
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-title-custom {
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 1.75rem;
+}
+
+.custom-input {
+    border-color: #ffca8c !important;
+}
+
+.custom-input:focus {
+    border-color: #ff8500 !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 133, 0, 0.25) !important;
+}
+
+/* --- Botón Login --- */
+.btn-login-custom {
+    background-color: #ff8500 !important;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+
+.btn-login-custom:hover {
+    filter: brightness(92%);
+    transform: translateY(-1px);
+}
+
+/* --- Enlace Inferior con Hover Naranja --- */
+.footer-link-bellon {
+    color: #48cae4; /* Celeste inicial */
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-link-bellon:hover {
+    color: #ff8500 !important; /* Naranja Bellon */
+    transform: scale(1.02);
+}
+
+/* --- Ajustes Responsive --- */
+@media (max-width: 767.98px) {
+    .form-title-custom {
+        font-size: 1.5rem;
+    }
+    
+    .slogan-text {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .container-logo-responsive .text-end {
+        text-align: center !important;
+    }
 }
 
 

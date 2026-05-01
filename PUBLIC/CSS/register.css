@@ -1,124 +1,88 @@
-/* --- Reset y Pantalla Completa --- */
+/* --- Estilos Globales --- */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    background-color: #fff;
+    overflow-x: hidden; 
+    background-color: #f8f9fa; 
 }
 
-.main-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-}
-
-.card {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-/* --- Lado Izquierdo (Formulario) --- */
-.left-side {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.form-title {
-    font-weight: 800;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: #000;
-}
-
-form {
-    width: 100%;
-    max-width: 380px;
-}
-
-.input-box {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.input-box input {
-    width: 100%;
-    padding: 15px 25px;
-    border: 1px solid #ffca8c; /* Borde fino naranja */
-    border-radius: 50px;
-    font-size: 0.9rem;
-    outline: none;
-}
-
-.register-btn {
-    width: 100%;
-    padding: 15px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 50px;
-    background-color: #ff8500;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(255, 133, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-/* --- Lado Derecho (Igual a la imagen) --- */
-.right-side {
-    flex: 1;
+/* --- Lado de la Imagen (right-side-bg) --- */
+.right-side-bg {
     background-image: url('/public/img/ta.jpeg');
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
-.overlay-content {
+.container-logo-responsive {
+    width: 85%; 
+    max-width: 450px; 
+}
+
+.container-img-white {
     width: 100%;
-    max-width: 500px; /* Ancho máximo para el conjunto logo/eslogan */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Alinea el contenido (eslogan) a la derecha */
-    padding: 20px;
 }
 
-.logo-container {
-    width: 100%; /* El logo ocupa el ancho del overlay */
-    background: transparent; /* QUITAMOS EL FONDO BLANCO */
-    box-shadow: none; /* QUITAMOS LA SOMBRA */
-    padding: 0;
+.slogan-text {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    font-size: 0.9rem; 
 }
 
-.top-logo {
+/* --- Lado del Formulario --- */
+.form-wrapper {
+    max-width: 400px; 
     width: 100%;
-    height: auto;
-    display: block;
 }
 
-.center-banner {
-    width: 100%;
-    margin-top: 10px;
+.form-title-custom {
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 1.75rem; 
 }
 
-.slogan {
-    font-size: 0.9rem;
-    font-style: italic;
-    color: #fff;
-    text-align: right; /* Texto alineado a la derecha */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8); /* Sombra para que se lea sobre la foto */
-    font-weight: 500;
+.custom-input {
+    border-color: #ffca8c !important; 
+}
+
+.custom-input:focus {
+    border-color: #ff8500 !important; 
+    box-shadow: 0 0 0 0.25rem rgba(255, 133, 0, 0.25) !important;
+}
+
+.btn-register-custom {
+    background-color: #ff8500 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-register-custom:hover {
+    filter: brightness(92%);
+    transform: translateY(-1px);
+}
+
+/* --- NUEVO: Estilo del enlace con hover naranja --- */
+.text-info {
+    color: #48cae4 !important; /* Color celeste inicial */
+    transition: color 0.3s ease;
+}
+
+.text-info:hover {
+    color: #ff8500 !important; /* Naranja Bellon al pasar el mouse */
+}
+
+/* --- Media Query para Ajustes Finos (PC -> Móvil) --- */
+@media (max-width: 767.98px) {
+    .form-title-custom {
+        font-size: 1.5rem;
+    }
+    
+    .slogan-text {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .container-logo-responsive .text-end {
+        text-align: center !important;
+    }
 }
