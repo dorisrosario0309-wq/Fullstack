@@ -23,7 +23,7 @@ body {
 
 /* --- Categorías --- */
 .category-item img {
-    width: 60px;
+    width: 100px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -35,6 +35,14 @@ body {
 .category-item p {
     font-size: 0.9rem;
     color: #333;
+}
+
+.category-item a{
+    text-decoration: none;
+}
+
+.category-item h2{
+    text-decoration: none;
 }
 
 /* --- Footer --- */
