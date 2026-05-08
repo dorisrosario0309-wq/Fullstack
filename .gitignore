@@ -1,2 +1,13 @@
 node_modules/
 .env
+footer.hbs
+header.hbs
+navbar.hbs
+Inicio.html
+login.html
+register.html
+Inicio.css
+login.css
+register.css
+login.js
+register.js
