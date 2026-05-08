@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Bellon-fereteriacategoria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="categoriageneral.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #ff8500;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/public/img/logo.png" alt="Bellon" height="40">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link border border-white rounded px-2" href="#">Bellon VIP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <section class="container py-5">
+      <h1 class="text-center fw-bold mb-5 section-title">Productos</h1>
+    </section>
+    <section class="buscador-Productos">
+        <form action="/buscar" method="get">
+         <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar en el sitio">
+         <button type="submit">Buscar</button>
+       </form>
+    </section>
+
+   <section class="productos-layout">
+    <div class="filtros">
+      <h5>Filtros</h5>
+      <hr>
+      <label><input type="checkbox"> Productos en Oferta</label>
+      <hr>
+      <h5>Precios</h5>
+      <div class="precio-inputs">
+        <input type="text" placeholder="mínimo">
+        <span>a</span>
+        <input type="text" placeholder="máximo">
+      </div>
+      <hr>
+      <h5>Categorías</h5>
+      <ul>
+        <li>Tornillos</li>
+        <li>Herramientas</li>
+        <li>Cerraduras</li>
+        <li>Tuberías</li>
+      </ul>
+    </div>
+
+    <div class="grid-productos">
+
+      <div class="producto">
+       
+        <div class="img-box"><img src="producto1.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>JUEGO DE DESTORNILLADORES</h6>
+          <p class="precio">RD$1,299<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto2.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>MARTILLO CARPINTERO 20 OZ</h6>
+          <p class="precio">RD$899<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto3.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>LLAVE INGLESA AJUSTABLE 12"</h6>
+          <p class="precio">RD$650<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto4.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>CERRADURA DOBLE PASADOR</h6>
+          <p class="precio">RD$2,150<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        
+        <div class="img-box"><img src="producto5.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>CINTA MÉTRICA 5 METROS</h6>
+          <p class="precio">RD$450<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto6.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>CASCO DE SEGURIDAD INDUSTRIAL</h6>
+          <p class="precio">RD$780<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto7.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>TALADRO PERCUTOR 600W</h6>
+          <p class="precio">RD$4,850<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto8.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>NIVEL DE BURBUJA 60 CM</h6>
+          <p class="precio">RD$520<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto9.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>ESCALERA ALUMINIO 6 PASOS</h6>
+          <p class="precio">RD$3,200<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto10.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>SIERRA CIRCULAR 7-1/4"</h6>
+          <p class="precio">RD$6,499<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto11.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>PISTOLA DE SILICÓN PROFESIONAL</h6>
+          <p class="precio">RD$380<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+      <div class="producto">
+        <div class="img-box"><img src="producto12.jpg" alt="Producto"></div>
+        <div class="producto-info">
+          <h6>GUANTES DE TRABAJO REFORZADOS</h6>
+          <p class="precio">RD$220<sup>00</sup></p>
+        </div>
+        <button class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+
+    </div>
+  </section>
+   <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <img src="/public/img/logo.png" alt="Logo" class="mb-3" width="150">
+                    <p class="small fst-italic">La ferretería más grande del país. ¡Donde encuentras más de lo que buscas!</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-lg-5">
+                    <h5 class="fw-bold mb-4">Horarios</h5>
+                    <p class="small">Trabajamos los 7 días de la semana. Contáctanos si tienes una emergencia a nuestra línea directa.</p>
+                    <ul class="list-unstyled small">
+                        <li class="d-flex justify-content-between"><span>Lunes - Viernes:</span> <span>7:30 AM - 8:00 PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Sábados:</span> <span>7:30 AM - 8:00 PM</span></li>
+                        <li class="d-flex justify-content-between"><span>Domingos y Feriados:</span> <span>8:30 AM - 2:30 PM</span></li>
+                    </ul>
+                    <p class="small fst-italic text-secondary mt-3">* El horario puede variar según la sucursal.</p>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="fw-bold mb-4">Servicio al Cliente</h5>
+                    <div class="row small">
+                        <div class="col-6">
+                            <ul class="list-unstyled links-footer">
+                                <li><a href="#">Términos & Condiciones</a></li>
+                                <li><a href="#">Política de Privacidad</a></li>
+                                <li><a href="#">Entregas</a></li>
+                                <li><a href="#">Política de Pago</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled links-footer">
+                                <li><a href="#">Política de Devoluciones</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                                <li><a href="#">Promo Millonaria 2026</a></li>
+                                <li><a href="#">Promoción Colores...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
