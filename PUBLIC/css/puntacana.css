@@ -1,0 +1,123 @@
+.hero-section {
+  width: 100%;
+  height: 320px;
+  background: url("/public/IMG/punta.jpg") center center / cover no-repeat;
+  position: relative;
+}
+
+.section-title {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #1e3050;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff8500;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.contacto-1 {
+  display: grid;
+  gap: 0;
+  max-width: 700px;
+}
+
+.contacto-1 > div,
+.logo-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px 8px;
+}
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #1e3050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon-circle i {
+  color: #fff;
+  font-size: 25px;
+}
+
+.info-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e3050;
+  margin-bottom: 4px;
+}
+
+.info-text,
+.info-text a {
+  font-size: 25xp;
+  color: #222;
+  text-decoration: none;
+  line-height: 1.6;
+  display: block;
+}
+
+.sucursal-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+.info-col {
+  flex: 1 1 380px;
+}
+
+.mapa-col {
+  flex: 1 1 380px;
+}
+
+.mapa-col .address-label {
+  font-weight: 700;
+  font-size: 25px;
+  color: #1e3050;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.mapa-col .address-label i {
+  color: #1e3050;
+  margin-right: 6px;
+}
+
+.mapa-embed {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .hero-section { height: 220px; }
+
+  .contacto-1 {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .contacto-1 > div,
+  .logo-contacto { padding: 12px 24px; }
+
+  .sucursal-wrapper { gap: 24px; }
+}
